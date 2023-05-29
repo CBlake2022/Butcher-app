@@ -1,11 +1,15 @@
 import { useState } from "react";
-
+import Nav from "./components/nav/Nav";
 import "./App.scss";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <p>hello</p>;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 }
 
 export default App;
