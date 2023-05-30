@@ -1,0 +1,32 @@
+.hero {
+  padding: 15px;
+  background-color: #ffe3e5;
+  margin-top: 10px;
+  &__container {
+  }
+
+  &__sub {
+    font-family: "HandWritting";
+    font-size: 18px;
+    color: #6f818d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__details {
+    h1 {
+      font-family: "JostExtraBold";
+      font-size: 30px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__descr {
+    font-family: "JostRegular";
+    font-size: 12px;
+    line-height: 15px;
+    color: #6f818d;
+  }
+}

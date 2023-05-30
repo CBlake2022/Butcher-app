@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Nav from "./components/nav/Nav";
+import Hero from "./components/hero/Hero";
+
 import "./App.scss";
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
   return (
     <>
       <Nav />
+      <Hero />
     </>
   );
 }

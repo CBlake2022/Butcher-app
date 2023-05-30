@@ -1,7 +1,13 @@
 .nav {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-rows: repeat(2, min-content);
+  &__container {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  &__hamburger {
+    display: block;
+  }
 
   &__lblock {
     display: flex;
@@ -26,6 +32,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: "JostRegular";
+    font-size: 14px;
 
     li {
       border-bottom: 1px lightgrey solid;
@@ -43,5 +51,33 @@
 
   &__toggle:checked ~ &__links {
     display: block;
+  }
+
+  //this will take effect from 600px and above
+  @media screen and (min-width: 600px) {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__links {
+      display: flex;
+      gap: 18px;
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+
+      li {
+        border-bottom: none;
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+    }
   }
 }
