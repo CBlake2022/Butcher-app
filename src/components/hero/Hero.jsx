@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.scss";
+import Button from "../button/Button";
+import Reviews from "../reviews/Reviews";
 
 export default function Hero() {
   return (
@@ -12,6 +14,8 @@ export default function Hero() {
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy
           </p>
+          <Button />
+          <Reviews />
         </div>
         <div className="hero__image"></div>
       </div>
