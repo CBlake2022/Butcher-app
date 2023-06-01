@@ -2,6 +2,7 @@
   padding: 15px;
   background-color: #ffe3e5;
   margin-top: 10px;
+
   &__container {
   }
 
@@ -29,5 +30,33 @@
     line-height: 15px;
     color: #6f818d;
     margin-bottom: 25px;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 603px) {
+    padding-left: 0;
+    padding-right: 0;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    &__details {
+      max-width: 300px;
+      margin-top: 60px;
+    }
+
+    &__image {
+      img {
+        max-width: 450px;
+      }
+    }
   }
 }

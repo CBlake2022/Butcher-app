@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import Button from "../button/Button";
 import Reviews from "../reviews/Reviews";
+import heroImage from "../../assets/images/hero-image.png";
 
 export default function Hero() {
   return (
@@ -17,7 +18,9 @@ export default function Hero() {
           <Button />
           <Reviews />
         </div>
-        <div className="hero__image"></div>
+        <div className="hero__image">
+          <img src={heroImage} alt="" />
+        </div>
       </div>
     </div>
   );

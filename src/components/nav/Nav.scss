@@ -55,11 +55,12 @@
 
   //this will take effect from 600px and above
   @media screen and (min-width: 600px) {
+    margin-top: 20px;
     &__container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 90%;
+      max-width: 80%;
       margin: 0 auto;
     }
 
